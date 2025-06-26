@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>MG Portfolio</title>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><sup>MG</sup>Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Développeur Créatif</h1>
+            <p>Passionné par la création d'expériences digitales uniques et innovantes. Je transforme vos idées en réalité avec du code élégant et des designs modernes.</p>
+            <a href="#projets" class="cta-button">Découvrir mes projets</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="section about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <p>
+                    Bienvenue sur mon Portfolio ! Je suis un jeune étudiant en Développement Web avec une passion pour l'innovation et le design. 
+                    Fort d'une créativité débordante, je me spécialise dans la création d'applications web modernes et performantes. 
+                    Mon approche combine expertise technique et sens artistique pour livrer des solutions qui dépassent les attentes. 
+                    Toujours à l'affût des dernières technologies et tendances du développement web.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projets" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets Github</h2>
+            
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="images/restaurant.png" alt="Site vitrine restaurant"/>
+                </div>
+                <div class="project-content">
+                    <h3>1er Site Web vitrine</h3>
+                    <p>Site web vitrine pour un restaurant développé avec HTML, CSS et JavaScript. Présentation des services, témoignages clients et formulaire de contact. Design responsive et optimisation SEO.</p>
+                    <a href="https://github.com/username/restaurant-website" class="cta-button">Voir sur GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item reverse">
+                <div class="project-image">
+                    <img src="images/hinode.png" alt="Site vitrine pour une équipe e-sport"/>
+                </div>
+                <div class="project-content">
+                    <h3>Site Web équipe E-sport</h3>
+                    <p>Site web vitrine pour une équipe e-sport développé avec HTML, CSS et JavaScript. Présentation des membres, des jeux et des événements. Design responsive et optimisation SEO.</p>
+                    <a href="https://github.com/username/hinode-website" class="cta-button">Voir sur GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="images/dashboard.png" alt="Tableau de bord d'analyse de données (fictif)"/>
+                </div>
+                <div class="project-content">
+                    <h3>Analytics Dashboard</h3>
+                    <p>Tableau de bord d'analyse de données (fictif) en temps réel avec graphiques interactifs et KPIs personnalisables. Built with D3.js et React, permet la visualisation de métriques complexes avec des performances optimisées.</p>
+                    <a href="https://github.com/username/hinode-website" class="cta-button">Voir sur GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section -->
+<section id="galerie" class="section gallery">
+    <div class="container">
+        <h2 class="section-title">Galerie</h2>
+        <div class="carousel-container">
+            <div class="carousel-slides" id="carouselSlides">
+                
+                <!-- Slide 1 - Remplacez par vos images -->
+                <div class="carousel-slide" onclick="openImage(1)">
+                    <img src="images/Blue.jpg" alt="Nuit étoilée sur un banc">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <h3>BLUE</h3>
+                            <p>Un homme en pleine réfléxion face à l'immensité de l'océan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide" onclick="openImage(2)">
+                    <img src="images/Marbré.png" alt="Photographie créative">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <h3>MARBRE</h3>
+                            <p>Création inspirée sur le marbre et ses formes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide" onclick="openImage(3)">
+                    <img src="images/Take_Time.png" alt="Illustration digitale">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <h3>TAKE TIME</h3>
+                            <p>Illustration digitale faite grâce à Procreate sur iPad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="carousel-slide" onclick="openImage(4)">
+                    <img src="images/temple.jpg" alt="Interface web responsive">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <h3>TEMPLE</h3>
+                            <p>Une sorte d'auto-portrait en méditation. Dans ma salle du temps ou réflexion et création naissent.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="carousel-slide" onclick="openImage(5)">
+                    <img src="images/banc.png" alt="Identité visuelle et branding">
+                    <div class="slide-overlay">
+                        <div class="slide-content">
+                            <h3>BANC</h3>
+                            <p>Illustration digitale faite grâce à Procreate sur iPad.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Dots de navigation du carousel -->
+    <div class="dot" onclick="currentSlide(1)"></div>
+    <div class="dot" onclick="currentSlide(2)"></div>
+    <div class="dot" onclick="currentSlide(3)"></div>
+    <div class="dot" onclick="currentSlide(4)"></div>
+</div>
+            <!-- Navigation du carousel -->
+             <div class="carousel-dots-external">
+            <div class="dot active" onclick="currentSlide(0)"></div>
+            <div class="dot" onclick="currentSlide(1)"></div>
+            <div class="dot" onclick="currentSlide(2)"></div>
+            <div class="dot" onclick="currentSlide(3)"></div>
+            <div class="dot" onclick="currentSlide(4)"></div>
+        </div>
+         
+
+        </div>
+    </div>
+</section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section blog">
+        <div class="container">
+            <h2 class="section-title">Blog</h2>
+            <div class="blog-grid">
+                <div class="blog-card" onclick="openBlog(1)">
+                    <h3>Les tendances du développement web 2025</h3>
+                    <p>Découvrez les technologies émergentes qui façonnent l'avenir du web. De l'IA à la réalité augmentée, explorez comment ces innovations transforment notre façon de créer des expériences digitales...</p>
+                </div>
+                <div class="blog-card" onclick="openBlog(2)">
+                    <h3>Guide complet du design système</h3>
+                    <p>Apprenez à créer et maintenir un design système efficace pour vos projets. Méthodes, outils et bonnes pratiques pour une cohérence visuelle et une productivité optimale en équipe...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Skill section-->
+<section id="competences" class="section skills">
+    <div class="container">
+        <h2 class="section-title skills-title">Mes Compétences</h2>
+        
+        <div class="skills-grid">
+            <!-- Frontend Skills -->
+            <div class="skills-category">
+                <h3>🎨 Frontend</h3>
+                <div class="skill-item skill-expert">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML5</span>
+                        <span class="skill-level">Maîtrisé</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item skill-expert">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS3</span>
+                        <span class="skill-level">Maîtrisé</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item skill-learning">
+                    <div class="skill-header">
+                        <span class="skill-name">React</span>
+                        <span class="skill-level">En apprentissage</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item skill-learning">
+                    <div class="skill-header">
+                        <span class="skill-name">Vue.js</span>
+                        <span class="skill-level">En apprentissage</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 25%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="skills-category">
+                <h3>⚙️ Backend</h3>
+                <div class="skill-item skill-intermediate">
+                    <div class="skill-header">
+                        <span class="skill-name">Java</span>
+                        <span class="skill-level">Intermédiaire</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 60%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item skill-learning">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-level">En apprentissage</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 35%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item skill-learning">
+                    <div class="skill-header">
+                        <span class="skill-name">Django</span>
+                        <span class="skill-level">En apprentissage</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 20%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database Skills -->
+            <div class="skills-category">
+                <h3>🗄️ Bases de données</h3>
+                <div class="skill-item skill-learning">
+                    <div class="skill-header">
+                        <span class="skill-name">MySQL</span>
+                        <span class="skill-level">En apprentissage</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item skill-learning">
+                    <div class="skill-header">
+                        <span class="skill-name">PostgreSQL</span>
+                        <span class="skill-level">En apprentissage</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills Legend -->
+        <div class="skills-legend">
+            <div class="legend-item">
+                <div class="legend-color legend-expert"></div>
+                <span>Maîtrisé</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-intermediate"></div>
+                <span>Intermédiaire</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color legend-learning"></div>
+                <span>En apprentissage</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <form class="contact-form" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Sujet</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer le message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank">📷</a>
+                <a href="https://github.com" target="_blank">🐙</a>
+                <a href="mailto:contact@example.com">📧</a>
+            </div>
+            <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
