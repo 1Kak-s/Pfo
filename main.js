@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // ===== CAROUSEL FUNCTIONALITY =====
+    // CAROUSEL  
     let currentSlideIndex = 0;
     let autoSlideInterval;
     const slides = document.getElementById('carouselSlides');
     
-    // 🔧 CORRECTION : Chercher les nouveaux dots avec la bonne classe
+    // Chercher les nouveaux dots avec la bonne classe
     const dots = document.querySelectorAll('.carousel-dots-external .dot');
 
-    // Vérification que les éléments existent
+    // Vérif que les éléments existent
     if (!slides) {
         console.error('Slides du carrousel non trouvés !');
         return;
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateCarousel();
     }
 
-    // ===== AUTO-SLIDE FUNCTIONALITY =====
+    // AUTO-SLIDE FUNCTIONALITY 
     function startAutoSlide() {
         autoSlideInterval = setInterval(() => {
             nextSlide();
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         clearInterval(autoSlideInterval);
     }
 
-    // ===== EVENT LISTENERS =====
+    // EVENT LISTENERS 
     
     // Event listeners pour les dots
     dots.forEach((dot, index) => {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // ===== FONCTIONS GLOBALES =====
+    //  FONCTIONS GLOBALES 
     
     // Rendre les fonctions accessibles globalement pour les onclick
     window.currentSlide = currentSlide;
@@ -119,9 +119,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     window.submitForm = submitForm;
 
-    // ===== AUTRES FONCTIONNALITÉS =====
+    // ===== AUTRES FONCTIONNALITÉS 
 
-    // Smooth scrolling for navbar links
+    // scroll  navbar links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ===== SCROLL ANIMATIONS =====
+    // SCROLL ANIMATIONS 
     
     const observerOptions = {
         threshold: 0.1,
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(section);
     });
 
-    // ===== SKILLS ANIMATIONS =====
+    // SKILLS ANIMATIONS
     
     function animateSkillBars() {
         const skillBars = document.querySelectorAll('.skill-progress');
@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     window.addSkill = addSkill;
 
-    // ===== INITIALISATION =====
+    // ===== INITIALISATION 
     
     // Démarrer l'auto-slide
     startAutoSlide();

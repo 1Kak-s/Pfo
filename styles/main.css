@@ -1,6 +1,6 @@
-/* ========================================= */
-/* 🎨 CSS PORTFOLIO COMPLET - VERSION CORRIGÉE */
-/* ========================================= */
+
+/* 🎨 CSS PORTFOLIO */
+
 
 * {
     margin: 0;
@@ -16,9 +16,9 @@ body {
     overflow-x: hidden;
 }
 
-/* ========================================= */
-/* 🧭 NAVBAR */
-/* ========================================= */
+
+/*  NAVBAR */
+
 
 .navbar {
     position: fixed;
@@ -97,9 +97,9 @@ body {
     transition: 0.3s;
 }
 
-/* ========================================= */
-/* 🏠 HERO SECTION */
-/* ========================================= */
+
+/* HERO SECTION */
+
 
 .hero {
     min-height: 100vh;
@@ -169,9 +169,9 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* ========================================= */
-/* 📄 SECTION STYLES GÉNÉRAUX */
-/* ========================================= */
+
+/*  SECTION STYLES GÉNÉRAUX */
+
 
 .section {
     padding: 5rem 0;
@@ -194,9 +194,9 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* ========================================= */
-/* 👤 ABOUT SECTION */
-/* ========================================= */
+
+/*  ABOUT SECTION */
+
 
 .about {
     background: white;
@@ -213,9 +213,9 @@ body {
     line-height: 1.8;
 }
 
-/* ========================================= */
-/* 💼 PROJECTS SECTION */
-/* ========================================= */
+
+/*  PROJECTS SECTION */
+
 
 .projects {
     background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
@@ -277,9 +277,9 @@ body {
     opacity: 0.9;
 }
 
-/* ========================================= */
-/* 🖼️ GALLERY SECTION - CAROUSEL CORRIGÉ */
-/* ========================================= */
+
+/*  GALLERY SECTION - CAROUSEL CORRIGÉ */
+
 
 .gallery {
     background: white;
@@ -461,9 +461,8 @@ body {
     right: 1rem;
 }
 
-/* ========================================= */
-/* 📝 BLOG SECTION */
-/* ========================================= */
+/*  BLOG SECTION */
+
 
 .blog {
     background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
@@ -505,9 +504,8 @@ body {
     line-height: 1.6;
 }
 
-/* ========================================= */
-/* 🎯 SKILLS SECTION */
-/* ========================================= */
+/*  SKILLS SECTION */
+
 
 .skills {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -642,9 +640,8 @@ body {
 .legend-learning { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
 .legend-beginner { background: linear-gradient(90deg, #ef4444, #f87171); }
 
-/* ========================================= */
-/* 📧 CONTACT SECTION */
-/* ========================================= */
+/*  CONTACT SECTION */
+
 
 .contact {
     background: white;
@@ -706,7 +703,7 @@ body {
 }
 
 
-/* 🦶 FOOTER */
+/*  FOOTER */
 
 
 .footer {
@@ -799,7 +796,7 @@ body {
 }
 
 
-/* 📱 RESPONSIVE DESIGN */
+/*  RESPONSIVE DESIGN */
 
 
 /* Tablet et Mobile */
